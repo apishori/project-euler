@@ -14,8 +14,5 @@ def evenFibonacciSum(n):
 def EFn(a, b): #recursive definition of even fibonacci number
     return (4 * b + a)
 
-def main():
-    print(evenFibonacciSum(4000000))
-
 if __name__ == "__main__":
-    main()
+    print(evenFibonacciSum(4000000))

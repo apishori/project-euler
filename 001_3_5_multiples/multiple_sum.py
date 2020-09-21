@@ -19,11 +19,7 @@ def ThreeFiveMultipleSum(limit):
     return int(sum3 + sum5 - sum15)
 
 def Tn(n): #returns sum of natural numbers from 1 to n
-    return (n * (n + 1)/2)
-
-def main():
-    print(ThreeFiveMultipleSum(10))
-    print(ThreeFiveMultipleSum(1000))
+    return (n * (n + 1)/2)  
 
 if __name__ == "__main__":
-    main()
+    print(ThreeFiveMultipleSum(1000))
