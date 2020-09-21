@@ -6,9 +6,9 @@ def reciprocalCycle(n):
 
 def largestReciprocalCycle(n):
     maxCycle = 0
-    for i in range(1, n+1):
-        print(reciprocalCycle(i))
-        maxCycle = max(maxCycle, reciprocalCycle(i))
+    for i in range(2, n+1):
+        if not isTwoOrFiveMultipleOnly(i):
+            maxCycle = max(maxCycle, reciprocalCycle(i))
     return maxCycle
 
 if __name__ == "__main__":

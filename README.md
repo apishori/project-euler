@@ -5,5 +5,6 @@ A repo containing solutions to the famous [project euler problems](https://proje
 ## Solutions:
 - 001 -> 233168
 - 002 -> 4613732
+- 005 -> 232792560
 - 021 -> 31626
 - 031 -> 73682

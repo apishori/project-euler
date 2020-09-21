@@ -1,16 +1,16 @@
 import math
 
-def lowestCommentFactors(n):
-    lcfs = []
-    for i in range(2, n+1):
-        if 
-    return lcfs
-
 def smallestMultiple(n):
-    return math.prod(lowestCommentFactors(n))
-
-def main():
-    print(smallestMultiple(10))
+    factors = []
+    multiple = 1
+    for i in range(2,n+1):
+        for x in factors:
+            if i % x == 0:
+                i //= x
+        if i != 1:
+            factors.append(i)
+            multiple *= i
+    return multiple
 
 if __name__ == "__main__":
-    main()
+    print(smallestMultiple(20))
